@@ -1,8 +1,8 @@
-import { Banner } from "@/components/Banner";
-import { Header } from "@/components/Header";
-import { site } from "@/lib/site";
+import { Banner } from "./components/Banner.jsx";
+import { Header } from "./components/Header.jsx";
+import { site } from "./lib/site.js";
 
-export default function Home() {
+export default function App() {
   return (
     <div id="top" className="contents">
       <Header />

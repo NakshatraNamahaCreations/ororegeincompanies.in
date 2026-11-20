@@ -1,18 +1,18 @@
-import Image from "next/image";
-import { banner, site } from "@/lib/site";
+import { banner, site } from "../lib/site.js";
 
 export function Banner() {
   return (
     <section aria-label="ORO Regen Companies" className="w-full bg-[#c4661f]">
       <a href={site.websiteUrl} className="group relative block" aria-label={`Visit our new website ${site.websiteLabel}`}>
-        <Image
+        <img
           src={banner.src}
+          srcSet={banner.srcSet}
+          sizes="100vw"
           alt={banner.alt}
           width={banner.width}
           height={banner.height}
-          priority
-          quality={90}
-          sizes="100vw"
+          fetchPriority="high"
+          decoding="async"
           className="block h-auto w-full"
         />
 

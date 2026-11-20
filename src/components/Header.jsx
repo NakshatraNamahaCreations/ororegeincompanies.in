@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { site } from "@/lib/site";
+import { site } from "../lib/site.js";
 
 export function Header() {
   return (
@@ -9,13 +8,12 @@ export function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-center gap-4 px-4 py-3 sm:gap-8 sm:px-8 sm:py-4">
         <span aria-hidden="true" className="hidden h-px flex-1 bg-gradient-to-r from-transparent to-brand/50 sm:block" />
         <a href="#top" aria-label={`${site.name} home`} className="shrink-0">
-          <Image
+          <img
             src={site.logo}
             alt={site.name}
             width={480}
-            height={240}
-            priority
-            sizes="(min-width: 1024px) 224px, (min-width: 640px) 192px, 160px"
+            height={237}
+            fetchPriority="high"
             className="h-16 w-auto sm:h-20 lg:h-24"
           />
         </a>
