@@ -28,5 +28,3 @@ Deploy the `dist/` folder to any static host (Vercel, Netlify, cPanel, etc.).
 - `src/App.jsx` – page layout and "We have moved" section
 - `src/index.css` – colours and animations
 - `public/` – logo, favicon and banner images
-
-The previous Next.js version is kept on the `nextjs` branch.
